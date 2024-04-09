@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    background-color: #49302d;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    min-height: 100Vh;
+} 
+
+#particles-js {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+#particles-js.active {
+    opacity: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin-top: 50px;
+    color: #fcf4e2;
+    font-size: 60px;
+    text-shadow: 7px 7px 10px #000000;
+    background-color: #49302dab;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px #faab69;
+    padding: 10px 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text {
+    color: #49dc6a ;
+    text-shadow: 3px 3px  #007825;
+    box-shadow: 10px 10px 20px red;
+}
+
+#btn, #btn_playMusic {
+    margin: 7px;
+    padding: 10px;
+    background-color: #faab69;
+    color: #fff;
+    text-shadow: 3px 3px 5px #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px #49302d;
+    z-index: 11;
+}
+
+#btn:hover, #btn_playMusic:hover {
+    box-shadow: 7px 7px 20px #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.blok {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #3b2724ab;
+    border: none;
+    box-shadow: 10px 10px 20px #faab69;
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: 30px;
+    color: #fcf4e2;
+    text-shadow: 7px 7px 10px black;
+    font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+    font-size: 25px;
+    color: #fcf4e2;
+    text-shadow: 7px 7px 10px black;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    #btn, #btn_playMusic {
+        padding: 5px;
+        font-size: 19px;
+    }
+
+    .blok {
+        width: 100px;
+        height: 120px;
+        margin: 30px;
+    }
+
+    h3, h4 {
+        font-size: 20px;
+    }
+}

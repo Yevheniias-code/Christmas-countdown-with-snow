@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas countdown</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <div class="header">
+        <h1>Santa is coming to town!</h1>
+    </div>
+    
+    <div class="header">
+        <button id="btn">Let it snow</button>
+        <audio id="myAudio" src="song.mp3" loop="loop" autoplay="allowed"></audio>
+        <button id="btn_playMusic">Play music</button>
+    </div>
+
+    <div class="container">
+        <div class="blok">
+            <h3 class="day"></h3>
+            <h4>days</h4>
+        </div>
+        
+        <div class="blok">
+            <h3 class="hour"></h3>
+            <h4>hours</h4>
+        </div>
+        
+        <div class="blok">
+            <h3 class="minute"></h3>
+            <h4>minutes</h4>
+        </div>
+        
+        <div class="blok">
+            <h3 class="second"></h3>
+            <h4>seconds</h4>
+        </div>
+    </div>
+
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
